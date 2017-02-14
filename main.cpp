@@ -12,9 +12,13 @@ int main()
 	int size  = 6;
 	int guess = 0;
 
-	cout << "Search for one these numbers: 3  7  11  16  27  36 " 
-	     << '\n';
-
+	cout << "Search for a number: "; 
+	for(int a : arr)						// for-each implementation
+	{
+		cout << a << " ";					// Print numbers for users
+	}
+	cout << "\n";
+	
 	cin >> guess;							// User guess
 	search(arr, size, guess);				// Search for the number entered by the user
 
